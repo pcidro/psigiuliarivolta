@@ -1,0 +1,105 @@
+/* Paleta */
+
+/* Azul Claro (Aquarela)	O tom mais claro e suave do fundo.	#A0D7E7 (Um azul-celeste pastel)
+
+Azul Marinho/Escuro (Aquarela)	O tom mais profundo e saturado no fundo.	#203864 (Um azul marinho profundo)
+
+Dourado (Veios)	Os detalhes abstratos e sofisticados no fundo.	#C7A25D (Um tom de ouro envelhecido) */
+
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-shadow {
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: #c7ecf8;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 160px;
+  width: auto;
+  position: relative;
+  top: 10px;
+}
+
+.logo-text {
+  margin-top: 10px;
+}
+
+.logo-text p {
+  line-height: 1.1;
+}
+
+.profissao {
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.nome {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 0;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 6px;
+}
+
+.crp {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 0;
+  display: inline-block;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-menu li a {
+  font-size: 14px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.header-menu li a:hover {
+  color: #87ceeb;
+}
+
+.separador {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Hero */
