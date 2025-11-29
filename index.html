@@ -9,14 +9,44 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <div class="header-shadow">
     <header class="header">
+      <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
 
-      <div class="logo-container">
+      <div>
+        <div class="logo-container"> <img src="img/logofloor-removebg-preview.png" alt="Logo Giulia Rivolta" class="logo-img" />
+          <div class="logo-text">
+            <p class="profissao">Psicóloga</p>
+            <p class="nome">Giulia Rivolta</p>
+            <p class="crp">CRP 06/208996</p>
+          </div>
+        </div>
+      </div>
+      <ul class="header-menu nav-desktop" aria-label="Menu principal">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre mim</a></li>
+        <li><a href="#">Depoimentos</a></li>
+        <div class="consultation-container">
+          <img src="/img/phone.svg" alt="">
+          <li><a href="#">Agende sua sessão</a></li>
+        </div>
+      </ul>
+    </header>
+  </div>
+
+  <div class="backdrop" data-backdrop hidden></div>
+
+  <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="menu-header-mobile">
+      <button class="close-menu" aria-label="Fechar menu">×</button>
+      <div class="logo-container-mobile">
         <img src="img/logofloor-removebg-preview.png" alt="Logo Giulia Rivolta" class="logo-img" />
         <div class="logo-text">
           <p class="profissao">Psicóloga</p>
@@ -24,29 +54,48 @@
           <p class="crp">CRP 06/208996</p>
         </div>
       </div>
+    </div>
 
-      <ul class="header-menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Depoimentos</a></li>
-        <li><a href="#">Agende sua consulta</a></li>
-      </ul>
+    <nav class="nav-mobile" aria-label="Menu móvel">
+      <a href="#" class="nav-link">Início</a>
+      <a href="#" class="nav-link">Sobre mim</a>
+      <a href="#" class="nav-link">Depoimentos</a>
+      <a href="#" class="nav-link">Agende sua sessão</a>
+    </nav>
+  </aside>
 
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="subtitle">PSICÓLOGA GIULIA RIVOLTA</span>
+        <h1>Cuidando da sua <span class="highlight">saúde emocional</span> com acolhimento e profissionalismo.</h1>
+        <p>
+          Encontre um espaço seguro para compreender suas emoções, desenvolver autoconhecimento e construir uma vida mais leve e equilibrada.
+        </p>
+
+        <a href="#" class="cta-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Agendar Sessão Online
+        </a>
+
+        <p class="small-text">
+          Vamos iniciar esse passo juntos? Pode ser o ponto de partida para uma vida mais leve e alinhada com você.
+        </p>
       </div>
 
-    </header>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="img/giuliaheroo.png" alt="Foto da Psicóloga Giulia Rivolta">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-  </div>
-
-
-
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
