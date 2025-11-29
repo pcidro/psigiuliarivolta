@@ -1,12 +1,11 @@
 /* Header */
-
-@import url("./styles/header.css");
+@import url("styles/header.css");
 
 /* Hero */
+@import url("styles/hero.css");
 
-@import url("./styles/hero.css");
-
-@import url("./styles/about.css");
+/* About */
+@import url("styles/about.css");
 
 /* Geral */
 
