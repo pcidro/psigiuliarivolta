@@ -53,7 +53,7 @@
 .prev {
   width: 40px;
   height: 40px;
-  background: #64b5c5 url("/img/arrowleft.svg") no-repeat center;
+  background: #64b5c5 url("../img/arrowleft.svg") no-repeat center;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -64,7 +64,7 @@
 .next {
   width: 40px;
   height: 40px;
-  background: #64b5c5 url("/img/arrowright.svg") no-repeat center;
+  background: #64b5c5 url("../img/arrowright.svg") no-repeat center;
   border-radius: 50%;
   border: none;
   cursor: pointer;
