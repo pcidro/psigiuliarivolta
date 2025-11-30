@@ -7,6 +7,11 @@
 /* About */
 @import url("styles/about.css");
 
+/* About */
+@import url("styles/howihelp.css");
+
+@import url("styles/depoimentos.css");
+
 /* Geral */
 
 * {

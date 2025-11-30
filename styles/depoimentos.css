@@ -1,0 +1,131 @@
+.testimonials {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 20px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  margin-top: 25px;
+}
+
+.testimonial-content p {
+  font-family: "Georgia", serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.prev {
+  width: 40px;
+  height: 40px;
+  background: #64b5c5 url("/img/arrowleft.svg") no-repeat center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-indent: -999px;
+  transition: opacity 0.3s;
+}
+
+.next {
+  width: 40px;
+  height: 40px;
+  background: #64b5c5 url("/img/arrowright.svg") no-repeat center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-indent: -999px;
+  transition: opacity 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.8;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.8;
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  border-radius: 50%;
+  text-indent: -999px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 20px 10px;
+  }
+
+  .slide li {
+    width: 85vw;
+    margin: 0 10px;
+  }
+
+  .testimonial-content {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .slide-nav {
+    margin-top: 10px;
+  }
+}

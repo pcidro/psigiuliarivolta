@@ -1,25 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+
+  <!-- CDN ANIMAÇÕES -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Giulia Rivolta Psicóloga</title>
+
   <!-- Google fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
 
+
+<body>
   <div class="header-shadow">
     <header class="header">
       <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
-
       <div>
         <div class="logo-container"> <img src="img/logofloor-removebg-preview.png" alt="Logo Giulia Rivolta" class="logo-img" />
           <div class="logo-text">
@@ -34,7 +51,7 @@
         <li><a href="#">Sobre mim</a></li>
         <li><a href="#">Depoimentos</a></li>
         <div class="consultation-container">
-          <img src="/img/phone.svg" alt="">
+          <img src="img/phone.svg" alt="">
           <li><a href="#">Agende sua sessão</a></li>
         </div>
       </ul>
@@ -42,7 +59,6 @@
   </div>
 
   <div class="backdrop" data-backdrop hidden></div>
-
   <aside id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <div class="menu-header-mobile">
       <button class="close-menu" aria-label="Fechar menu">×</button>
@@ -55,7 +71,6 @@
         </div>
       </div>
     </div>
-
     <nav class="nav-mobile" aria-label="Menu móvel">
       <a href="#" class="nav-link">Início</a>
       <a href="#" class="nav-link">Sobre mim</a>
@@ -63,28 +78,27 @@
       <a href="#" class="nav-link">Agende sua sessão</a>
     </nav>
   </aside>
-
   <section id="hero">
     <div class="container">
       <div class="hero-content">
-        <span class="subtitle">PSICÓLOGA GIULIA RIVOLTA</span>
+        <span class="subtitle animate__animated animate__backInLeft animate__slow">
+          PSICÓLOGA GIULIA RIVOLTA
+        </span>
         <h1>Cuidando da sua <span class="highlight">saúde emocional</span> com acolhimento e profissionalismo.</h1>
-        <p>
+        <p class="animate__animated animate__backInUp animate__slow">
           Encontre um espaço seguro para compreender suas emoções, desenvolver autoconhecimento e construir uma vida mais leve e equilibrada.
         </p>
-
+        <img src="img/detail-hero.png" class="detail-shape-small" alt="">
         <a href="#" class="cta-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
           Agendar Sessão Online
         </a>
-
         <p class="small-text">
           Vamos iniciar esse passo juntos? Pode ser o ponto de partida para uma vida mais leve e alinhada com você.
         </p>
       </div>
-
       <div class="hero-image">
         <div class="image-wrapper">
           <img src="img/giuliaheroo.png" alt="Foto da Psicóloga Giulia Rivolta">
@@ -93,9 +107,97 @@
     </div>
   </section>
 
+  <section id="como-ajudo">
+    <h2>Como posso te <span class="help">ajudar</span></h2>
+    <p class="subtitulo">
+      Um espaço seguro para você falar, sentir e encontrar caminhos mais leves.
+    </p>
+
+    <div class="servicos-grid">
+
+      <!-- CARD 1 -->
+      <div class="servico-card">
+        <img class="servico-img" src="img/ansiety3.png" alt="">
+        <div class="servico-text">
+          <h3>Ansiedade e estresse</h3>
+          <p>
+            Vamos identificar o que te sobrecarrega e construir, juntos, maneiras mais tranquilas de lidar com o dia a dia.
+          </p>
+          <a href="#" class="btn-card">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="servico-card">
+        <img class="servico-img" src="img/depression.png" alt="">
+        <div class="servico-text">
+          <h3>Depressão e autoestima</h3>
+          <p>
+            Acolhimento para entender seus sentimentos, fortalecer sua visão sobre si mesmo e retomar o sentido das coisas.
+          </p>
+          <a href="#" class="btn-card">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="servico-card">
+        <img class="servico-img" src="img/knowyou.png" alt="">
+        <div class="servico-text">
+          <h3>Autoconhecimento</h3>
+          <p>
+            Um espaço para você compreender melhor quem é, o que sente e o que busca, criando mais presença e equilíbrio.
+          </p>
+          <a href="#" class="btn-card">Saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+    <p class="chamada-final"><em>
+        Se você se identificou com alguma dessas situações, saiba que não precisa enfrentar tudo sozinho. Estou aqui para caminhar com você, no seu tempo e do seu jeito.
+      </em></p>
+  </section>
+
+  <section class="testimonials" data-anime="scroll">
+    <div class="slide-wrapper">
+      <ul class="slide">
+        <li>
+          <div class="testimonial-content">
+            <p>"Já faço atendimento com a Doutora Giulia mais ou menos 1 ano.
+              É uma excelente profissional e nos acolhe desde o primeiro momento.
+              Sempre disposta a atender nossas situações e nos ajudando a ficar mais leve em cada atendimento.
+              Muito obrigada, por você não desistir de mim!
+              ❤️✨"</p>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial-content">
+            <p>"Minha filha tem 10 anos e pediu para fazer psicoterapia, encontrei o perfil da Giulia, marcamos com ela, e já na primeira entrevista eu e meu esposo ficamos satisfeitos com o manejo e orientações dela. Sobre os atendimentos com nossa filha, percebemos mudanças significativas nos pontos que foram motivos da procura. Ela gosta tanto que fica esperando toda semana pelas sessões."</p>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial-content">
+            <p>"Procurei a Giulia em um momento em que eu já não sabia mais por onde começar. Ela me ouviu com uma calma que eu não encontrava em nenhum outro lugar. Aos poucos fui entendendo minhas emoções, e hoje me sinto muito mais segura e consciente das minhas escolhas. A sensação é de finalmente conseguir respirar. Sou muito grata por todo o cuidado e por nunca me fazer sentir sozinha nesse processo."</p>
+          </div>
+        </li>
+        <li>
+          <div class="testimonial-content">
+            <p>"Cheguei ao consultório da Giulia esgotada, carregando coisas que nem sabia nomear. Ela foi me mostrando, passo a passo, que eu podia olhar para tudo isso sem medo. As sessões se tornaram o meu espaço de descanso e reflexão. Cada conversa me trouxe um pouco mais de força e clareza. A Giulia tem uma forma única de acolher, e isso fez toda diferença na minha vida."</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="slide-nav">
+      <button class="prev"></button>
+      <button class="next"></button>
+    </div>
+  </section>
+
 
 
   <script type="module" src="script.js"></script>
+
 </body>
+
+
 
 </html>
