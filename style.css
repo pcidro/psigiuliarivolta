@@ -36,7 +36,7 @@ a {
 
 .js-scroll {
   opacity: 0;
-  transform: translate3d((-30px, 0, 0));
+  transform: translate3d(-30px, 0, 0);
   transition: 0.3s;
 }
 
