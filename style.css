@@ -10,8 +10,13 @@
 /* Depoimentos */
 @import url("styles/depoimentos.css");
 
-/* Depoimentos */
+/* Timeline */
 @import url("styles/timeline.css");
+
+/*  */
+
+/* quem sou eu */
+@import url("styles/quemsoueu.css");
 
 /* Geral */
 
@@ -27,4 +32,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d((-30px, 0, 0));
+  transition: 0.3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d((0, 0, 0));
 }
