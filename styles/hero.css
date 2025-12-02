@@ -156,11 +156,68 @@ h1 .highlight {
   border: 1px solid #f0f0f0;
 }
 
+/* Oculta a imagem de mobile por padrão no desktop */
+.hero-content .mobile-only-block {
+  display: none;
+}
+
+/* Garante que a imagem de desktop seja visível no desktop */
+.desktop-only-block {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+  }
+
+  /* Oculta a imagem de desktop no mobile */
+  .desktop-only-block {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* 1. Elementos de texto e título */
+  .hero-content .subtitle,
+  .hero-content h1,
+  .hero-content p:not(.small-text) {
+    order: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* 2. Botão CTA */
+  .cta-button {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  /* 3. IMAGEM MOBILE (Exibe e reordena) */
+  .hero-content .mobile-only-block {
+    display: flex;
+    order: 3;
+    width: 100%;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content .mobile-only-block img {
+    box-shadow: 10px 10px 0px rgba(230, 242, 245, 1);
+  }
+
+  /* 4. Small Text */
+  .small-text {
+    order: 4;
+    margin: 0 auto;
   }
 
   #hero h1 {
@@ -179,10 +236,6 @@ h1 .highlight {
 
   .subtitle {
     margin-top: 1rem;
-  }
-
-  .small-text {
-    margin: 1.5rem auto 0;
   }
 
   .hero-image {
