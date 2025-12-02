@@ -10,7 +10,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/png">
 
   <link rel="stylesheet" href="style.css">
 
@@ -34,6 +35,7 @@
 
 
 <body>
+
   <div class="header-shadow">
     <header class="header">
       <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
@@ -50,11 +52,11 @@
       </div>
       <ul class="header-menu nav-desktop" aria-label="Menu principal">
         <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Depoimentos</a></li>
+        <li><a href="#quemsoueu">Sobre mim</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
         <div class="consultation-container">
           <img src="img/phone.svg" alt="">
-          <li><a href="#">Agende sua sessão</a></li>
+          <li><a href="https://wa.me/5511957875901">Agende sua sessão</a></li>
         </div>
       </ul>
     </header>
@@ -75,11 +77,12 @@
     </div>
     <nav class="nav-mobile" aria-label="Menu móvel">
       <a href="#" class="nav-link">Início</a>
-      <a href="#" class="nav-link">Sobre mim</a>
-      <a href="#" class="nav-link">Depoimentos</a>
-      <a href="#" class="nav-link">Agende sua sessão</a>
+      <a href="#quemsoueu" class="nav-link">Sobre mim</a>
+      <a href="#depoimentos" class="nav-link">Depoimentos</a>
+      <a href="https://wa.me/5511957875901" class="nav-link">Agende sua sessão</a>
     </nav>
   </aside>
+
   <section id="hero" class="js-scroll">
     <div class="container">
       <div class="hero-content">
@@ -91,7 +94,7 @@
           Encontre um espaço seguro para compreender suas emoções, desenvolver autoconhecimento e construir uma vida mais leve e equilibrada.
         </p>
         <img src="img/detail-hero.png" class="detail-shape-small" alt="">
-        <a href="#" class="cta-button">
+        <a href="https://wa.me/5511957875901" class="cta-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
@@ -102,64 +105,69 @@
         </p>
       </div>
       <div class="hero-image">
-        <div class="image-wrapper">
-          <img src="img/giuliaheroo.png" alt="Foto da Psicóloga Giulia Rivolta">
-        </div>
+        <img src="img/giuliaheroo.png" alt="Foto da Psicóloga Giulia Rivolta">
       </div>
     </div>
   </section>
 
-  <section id="como-ajudo" class="js-scroll">
-    <h2>Como posso te <span class="help">ajudar</span></h2>
-    <p class="subtitulo">
-      Um espaço seguro para você falar, sentir e encontrar caminhos mais leves.
+  <div class="comoajudo-bg">
+    <section id="como-ajudo" class="js-scroll">
+      <h2>Como posso te <span class="help">ajudar</span></h2>
+      <p class="subtitulo">
+        Um espaço seguro para você falar, sentir e encontrar caminhos mais leves.
+      </p>
+
+      <div class="servicos-grid">
+
+        <div class="servico-card">
+          <img class="servico-img" src="img/ansiety3.png" alt="">
+          <div class="servico-text">
+            <h3>Ansiedade e estresse</h3>
+            <p>
+              Vamos identificar o que te sobrecarrega e construir, juntos, maneiras mais tranquilas de lidar com o dia a dia.
+            </p>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <img class="servico-img" src="img/depression.png" alt="">
+          <div class="servico-text">
+            <h3>Depressão e autoestima</h3>
+            <p>
+              Acolhimento para entender seus sentimentos, fortalecer sua visão sobre si mesmo e retomar o sentido das coisas.
+            </p>
+          </div>
+        </div>
+
+        <div class="servico-card">
+          <img class="servico-img" src="img/knowyou.png" alt="">
+          <div class="servico-text">
+            <h3>Autoconhecimento</h3>
+            <p>
+              Um espaço para você compreender melhor quem é, o que sente e o que busca, criando mais presença e equilíbrio.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <p class="chamada-final"><em>
+          Se você se identificou com alguma dessas situações, saiba que não precisa enfrentar tudo sozinho. Estou aqui para caminhar com você, no seu tempo e do seu jeito.
+        </em></p>
+      <a href="https://wa.me/5511957875901" class="btn-card">Comece Sua Jornada de Cuidado Agora</a>
+    </section>
+  </div>
+
+
+  <div id="depoimentos" class=" testimonials-header js-scroll" data-anime="scroll">
+    <h2 class="section-title">
+      Transformando vidas com a <span class="highlight">Terapia</span>
+    </h2>
+    <p class="section-subtitle">
+      Um espaço seguro para acolher dores, fortalecer emoções e reconstruir caminhos.
     </p>
+  </div>
 
-    <div class="servicos-grid">
-
-      <!-- CARD 1 -->
-      <div class="servico-card">
-        <img class="servico-img" src="img/ansiety3.png" alt="">
-        <div class="servico-text">
-          <h3>Ansiedade e estresse</h3>
-          <p>
-            Vamos identificar o que te sobrecarrega e construir, juntos, maneiras mais tranquilas de lidar com o dia a dia.
-          </p>
-          <a href="#" class="btn-card">Saiba mais</a>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="servico-card">
-        <img class="servico-img" src="img/depression.png" alt="">
-        <div class="servico-text">
-          <h3>Depressão e autoestima</h3>
-          <p>
-            Acolhimento para entender seus sentimentos, fortalecer sua visão sobre si mesmo e retomar o sentido das coisas.
-          </p>
-          <a href="#" class="btn-card">Saiba mais</a>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="servico-card">
-        <img class="servico-img" src="img/knowyou.png" alt="">
-        <div class="servico-text">
-          <h3>Autoconhecimento</h3>
-          <p>
-            Um espaço para você compreender melhor quem é, o que sente e o que busca, criando mais presença e equilíbrio.
-          </p>
-          <a href="#" class="btn-card">Saiba mais</a>
-        </div>
-      </div>
-
-    </div>
-    <p class="chamada-final"><em>
-        Se você se identificou com alguma dessas situações, saiba que não precisa enfrentar tudo sozinho. Estou aqui para caminhar com você, no seu tempo e do seu jeito.
-      </em></p>
-  </section>
-
-  <section class="testimonials js-scroll" data-anime="scroll">
+  <section class=" testimonials js-scroll" data-anime="scroll">
     <div class="slide-wrapper">
       <ul class="slide">
         <li>
@@ -168,26 +176,44 @@
               É uma excelente profissional e nos acolhe desde o primeiro momento.
               Sempre disposta a atender nossas situações e nos ajudando a ficar mais leve em cada atendimento.
               Muito obrigada, por você não desistir de mim!
-              ❤️✨"</p>
+              ❤️✨"
+            </p>
           </div>
         </li>
+
         <li>
           <div class="testimonial-content">
-            <p>"Minha filha tem 10 anos e pediu para fazer psicoterapia, encontrei o perfil da Giulia, marcamos com ela, e já na primeira entrevista eu e meu esposo ficamos satisfeitos com o manejo e orientações dela. Sobre os atendimentos com nossa filha, percebemos mudanças significativas nos pontos que foram motivos da procura. Ela gosta tanto que fica esperando toda semana pelas sessões."</p>
+            <p>"Minha filha tem 10 anos e pediu para fazer psicoterapia, encontrei o perfil da Giulia,
+              marcamos com ela, e já na primeira entrevista eu e meu esposo ficamos satisfeitos com o manejo
+              e orientações dela. Sobre os atendimentos com nossa filha, percebemos mudanças significativas
+              nos pontos que foram motivos da procura. Ela gosta tanto que fica esperando toda semana pelas sessões."
+            </p>
           </div>
         </li>
+
         <li>
           <div class="testimonial-content">
-            <p>"Procurei a Giulia em um momento em que eu já não sabia mais por onde começar. Ela me ouviu com uma calma que eu não encontrava em nenhum outro lugar. Aos poucos fui entendendo minhas emoções, e hoje me sinto muito mais segura e consciente das minhas escolhas. A sensação é de finalmente conseguir respirar. Sou muito grata por todo o cuidado e por nunca me fazer sentir sozinha nesse processo."</p>
+            <p>"Procurei a Giulia em um momento em que eu já não sabia mais por onde começar. Ela me ouviu com
+              uma calma que eu não encontrava em nenhum outro lugar. Aos poucos fui entendendo minhas emoções,
+              e hoje me sinto muito mais segura e consciente das minhas escolhas. A sensação é de finalmente conseguir
+              respirar. Sou muito grata por todo o cuidado e por nunca me fazer sentir sozinha nesse processo."
+            </p>
           </div>
         </li>
+
         <li>
           <div class="testimonial-content">
-            <p>"Cheguei ao consultório da Giulia esgotada, carregando coisas que nem sabia nomear. Ela foi me mostrando, passo a passo, que eu podia olhar para tudo isso sem medo. As sessões se tornaram o meu espaço de descanso e reflexão. Cada conversa me trouxe um pouco mais de força e clareza. A Giulia tem uma forma única de acolher, e isso fez toda diferença na minha vida."</p>
+            <p>"Cheguei ao consultório da Giulia esgotada, carregando coisas que nem sabia nomear. Ela foi me mostrando,
+              passo a passo, que eu podia olhar para tudo isso sem medo. As sessões se tornaram o meu espaço de descanso
+              e reflexão. Cada conversa me trouxe um pouco mais de força e clareza. A Giulia tem uma forma única de acolher,
+              e isso fez toda diferença na minha vida."
+            </p>
           </div>
         </li>
+
       </ul>
     </div>
+
     <div class="slide-nav">
       <button class="prev"></button>
       <button class="next"></button>
@@ -195,7 +221,7 @@
   </section>
 
   <h2 class="h2-timeline js-scroll" data-anim="animate__fadeInLeft">Veja como funciona minha <span class="help">Abordagem</span></h2>
-  <div class="timeline-container js-scroll">
+  <div id="abordagem" class="timeline-container js-scroll">
 
 
     <div class="timeline-item right">
@@ -255,7 +281,7 @@
 
   </div>
 
-  <section id="quemsoueu js-scroll" class="sobre-container">
+  <section id="quemsoueu" class="sobre-container">
     <div class="sobre-content">
 
       <div class="sobre-texto">
@@ -284,11 +310,11 @@
           Será um prazer caminhar ao seu lado nesse processo.
         </p>
 
-        <button class="btn-escuta">
+        <a href="https://wa.me/5511957875901" class="btn-escuta">
           <img class="phone-escuta" src="img/phone.svg" alt="">
-          Quero um espaço de escuta sem julgamentos</button>
+          Quero um espaço de escuta sem julgamentos
+        </a>
       </div>
-
 
       <div class="sobre-imagem">
         <div class="img-decoracao"></div>
@@ -298,6 +324,143 @@
     </div>
   </section>
 
+  <section id="faq" class="faq-wrapper">
+    <div class="left-column">
+      <span class="tag">FAQ</span>
+      <h1 class="h1-faq">Perguntas Frequentes</h1>
+      <p class="description">Se não encontrou a resposta que desejava, entre em contato comigo pelo botão abaixo:</p>
+      <a href="https://wa.me/5511957875901" class="cta-button">
+        Mais Informações <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <div class="right-column">
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          1. Como funciona a primeira sessão?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            Na primeira sessão conversamos sobre sua queixa, histórico, rotina e expectativas sobre o processo terapêutico.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          2. Qual é a frequência das sessões?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            Em geral a frequência é semanal, podendo ser ajustada conforme necessidade.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          3. Atende online? É eficaz?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            Sim. O atendimento online é eficaz quando feito em um ambiente privado e organizado.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          4. Em quanto tempo posso perceber resultados?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            Varia conforme o caso, mas muitas pessoas percebem mudanças nas primeiras semanas com constância e participação ativa.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          5. Como faço para agendar uma sessão?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            O agendamento é feito pelo WhatsApp ou formulário do site. Assim que enviar sua solicitação, retorno para confirmar o horário.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          6. Qual é a sua abordagem terapêutica?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            Trabalho com a Terapia Cognitivo-Comportamental (TCC), focada na relação entre pensamentos, emoções e comportamentos.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="accordion-btn">
+          7. O que é TCC?
+          <img src="img/arrowright2.svg" alt="Seta" class="arrow-icon">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            A TCC é uma abordagem que ajuda a identificar e modificar padrões de pensamento e comportamento que causam sofrimento, promovendo estratégias práticas para o dia a dia.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-wrapper">
+          <img src="img/logofloor-removebg-preview.png" alt="Logo Giulia Rivolta" class="logo-img" />
+          <div class="logo-text">
+            <p class="profissao">Psicóloga</p>
+            <p class="nome">Giulia Rivolta</p>
+            <p class="crp">CRP 06/208996</p>
+          </div>
+        </div>
+        <p class="footer-desc">Cuidando da sua saúde emocional com acolhimento e profissionalismo.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#quemsoueu">Sobre Mim</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#abordagem">Minha Abordagem</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Siga nas redes</h3>
+        <a href="https://instagram.com" target="_blank" class="instagram-btn">
+          <img src="img/instagram.svg" alt="Instagram Icon">
+          <span>@giuliarivolta_psi</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Giulia Rivolta. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script type="module" src="script.js"></script>
 

@@ -18,8 +18,17 @@
 /* quem sou eu */
 @import url("styles/quemsoueu.css");
 
-/* Geral */
+/* faq */
+@import url("styles/faq.css");
 
+/* faq */
+@import url("styles/whatsapp.css");
+
+/* footer */
+
+@import url("styles/footer.css");
+
+/* Geral */
 * {
   margin: 0;
   padding: 0;

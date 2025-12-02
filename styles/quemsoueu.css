@@ -79,28 +79,6 @@
   --animate-duration: 0.6s;
 }
 
-.destaque-neuro {
-  background-color: #e8f4f8;
-  border-left: 4px solid #5fa8b8;
-  padding: 15px 20px;
-  border-radius: 0 8px 8px 0;
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.neuro-icon {
-  font-size: 24px;
-}
-
-.destaque-neuro p {
-  font-size: 15px;
-  color: #333;
-  line-height: 1.5;
-  margin: 0;
-}
-
 .frase-final {
   font-size: 16px;
   font-style: italic;
@@ -113,7 +91,7 @@
 }
 
 .btn-escuta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   background-color: #5fa8b8;
@@ -126,6 +104,7 @@
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(95, 168, 184, 0.3);
+  text-decoration: none;
 }
 
 .btn-escuta:hover {

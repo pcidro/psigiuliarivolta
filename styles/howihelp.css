@@ -2,6 +2,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
+  text-align: center;
+}
+
+.comoajudo-bg {
+  background-color: #e6f4f8;
 }
 
 #como-ajudo h2 {
@@ -21,10 +26,13 @@
 .subtitulo {
   font-size: 18px;
   color: #555;
-  text-align: center;
+  text-align: center !important;
+  position: relative;
   margin-bottom: 60px;
   font-weight: 300;
   line-height: 1.6;
+  display: block;
+  width: 100%;
 }
 
 .servicos-grid {
@@ -107,7 +115,7 @@
   font-size: 15px;
   transition: all 0.3s ease;
   border: 2px solid #64b5c5;
-  margin-top: auto;
+  margin-top: 30px;
 }
 
 .btn-card:hover {
